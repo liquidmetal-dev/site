@@ -92,7 +92,18 @@ const sidebars = {
     },
     'component-info/hardware',
     'component-info/networking',
-    'component-info/flintlock',
+    {
+      type: 'category',
+      label: 'Flintlock',
+      link: {
+        type: 'doc',
+        id: 'component-info/flintlock',
+      },
+      items: [
+        'component-info/cli',
+      ]
+    },
+    'component-info/providers',
     'component-info/images',
     'component-info/cluster-api',
     'component-info/capmvm',
