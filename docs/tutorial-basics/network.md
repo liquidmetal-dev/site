@@ -25,7 +25,8 @@ manage the virtual network.
 First install required packages:
 
 ```bash
-sudo apt install qemu qemu-kvm libvirt-clients libvirt-daemon-system virtinst bridge-utils
+sudo apt update
+sudo apt install qemu-system-x86 libvirt-clients libvirt-daemon-system virtinst bridge-utils
 ```
 
 Then start `libvirtd`:
@@ -127,7 +128,7 @@ Network liquid-metal started
 Verify that it was created and is up:
 
 ```bash
-virsh net-list
+sudo virsh net-list
 ```
 
 Output:
