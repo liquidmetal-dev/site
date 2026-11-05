@@ -69,7 +69,7 @@ spec:
     spec:
       kernel:
         filename: boot/vmlinux
-        image: ghcr.io/weaveworks-liquidmetal/flintlock-kernel:5.10.77
+        image: ghcr.io/liquidmetal-dev/flintlock-kernel:5.10.77
       kernelCmdline: {}
       memoryMb: 2048
       networkInterfaces:
@@ -87,7 +87,7 @@ spec:
     spec:
       kernel:
         filename: boot/vmlinux
-        image: ghcr.io/weaveworks-liquidmetal/flintlock-kernel:5.10.77
+        image: ghcr.io/liquidmetal-dev/flintlock-kernel:5.10.77
       kernelCmdline: {}
       memoryMb: 2048
       networkInterfaces:

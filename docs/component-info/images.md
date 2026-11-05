@@ -89,28 +89,28 @@ For example if using [`hammertime`][ht], edit the spec like so:
 ## Supported images
 
 **Kernel Binary**:
-- `ghcr.io/weaveworks-liquidmetal/kernel-bin:5.10.77`
-- `ghcr.io/weaveworks-liquidmetal/kernel-bin:4.19.215`
+- `ghcr.io/liquidmetal-dev/kernel-bin:5.10.77`
+- `ghcr.io/liquidmetal-dev/kernel-bin:4.19.215`
 
 **Kernel Modules**:
-- `ghcr.io/weaveworks-liquidmetal/kernel-modules:5.10.77`
-- `ghcr.io/weaveworks-liquidmetal/kernel-modules:4.19.215`
+- `ghcr.io/liquidmetal-dev/kernel-modules:5.10.77`
+- `ghcr.io/liquidmetal-dev/kernel-modules:4.19.215`
 
 **OS/Root Volume**:
 
 _The tags here refer to the version of Kubernetes._
 _The base OS is Ubuntu `20.04`._
-- `ghcr.io/weaveworks-liquidmetal/capmvm-k8s-os:1.23.5`
-- `ghcr.io/weaveworks-liquidmetal/capmvm-k8s-os:1.22.8`
-- `ghcr.io/weaveworks-liquidmetal/capmvm-k8s-os:1.22.3`
-- `ghcr.io/weaveworks-liquidmetal/capmvm-k8s-os:1.21.8`
+- `ghcr.io/liquidmetal-dev/capmvm-k8s-os:1.23.5`
+- `ghcr.io/liquidmetal-dev/capmvm-k8s-os:1.22.8`
+- `ghcr.io/liquidmetal-dev/capmvm-k8s-os:1.22.3`
+- `ghcr.io/liquidmetal-dev/capmvm-k8s-os:1.21.8`
 
 :::caution Older CAPMVM / Flintlock Versions
 If you are using a CAPMVM <= [v0.7.0][cap7] or Flintlock <= [v0.4.0][fl4] the separate
 modules volume is not supported. Supply the following legacy images instead:
 
-- Kernel: `ghcr.io/weaveworks-liquidmetal/flintlock-kernel:X.X.X`
-- Root volume: `ghcr.io/weaveworks-liquidmetal/capmvm-kubernetes:X.X.X`
+- Kernel: `ghcr.io/liquidmetal-dev/flintlock-kernel:X.X.X`
+- Root volume: `ghcr.io/liquidmetal-dev/capmvm-kubernetes:X.X.X`
 :::
 
 ## Experimental images
@@ -120,15 +120,15 @@ These images are not guaranteed to work.
 :::
 
 **Kernel**:
-- `ghcr.io/weaveworks-liquidmetal/flintlock-kernel-arm:5.10.77`
-- `ghcr.io/weaveworks-liquidmetal/flintlock-kernel-arm:4.19.215`
+- `ghcr.io/liquidmetal-dev/flintlock-kernel-arm:5.10.77`
+- `ghcr.io/liquidmetal-dev/flintlock-kernel-arm:4.19.215`
 
 **OS**:
 
-- `ghcr.io/weaveworks-liquidmetal/capmvm-kubernetes-arm:1.23.5`
-- `ghcr.io/weaveworks-liquidmetal/capmvm-kubernetes-arm:1.22.8`
-- `ghcr.io/weaveworks-liquidmetal/capmvm-kubernetes-arm:1.22.3`
-- `ghcr.io/weaveworks-liquidmetal/capmvm-kubernetes-arm:1.21.8`
+- `ghcr.io/liquidmetal-dev/capmvm-kubernetes-arm:1.23.5`
+- `ghcr.io/liquidmetal-dev/capmvm-kubernetes-arm:1.22.8`
+- `ghcr.io/liquidmetal-dev/capmvm-kubernetes-arm:1.22.3`
+- `ghcr.io/liquidmetal-dev/capmvm-kubernetes-arm:1.21.8`
 
 ## Build your own images
 

@@ -121,7 +121,7 @@ If you no longer have time for the issue, we can have it reassigned.
 
 [slack]: https://weave-community.slack.com/archives/C02KARWGR7S
 [team]: /docs/community/team
-[board]: https://github.com/orgs/weaveworks-liquidmetal/projects/1/views/2
+[board]: https://github.com/orgs/liquidmetal-dev/projects
 [flint]: https://github.com/liquidmetal-dev/flintlock
 [mvm-o]: https://github.com/liquidmetal-dev/microvm-operator
 [ctrl-p]: https://github.com/liquidmetal-dev/controller-pkg

@@ -239,7 +239,7 @@ with `systemctl status flintlockd.service`:
 ● flintlockd.service - flintlock microvm service
      Loaded: loaded (/etc/systemd/system/flintlockd.service; enabled; vendor preset: enabled)
      Active: active (running) since Fri 2022-10-28 10:33:52 UTC; 1s ago
-       Docs: https://weaveworks-liquidmetal.github.io/flintlock/
+       Docs: https://flintlock.liquidmetal.dev/
     Process: 16139 ExecStartPre=/usr/bin/which firecracker (code=exited, status=0/SUCCESS)
     Process: 16140 ExecStartPre=/usr/bin/which flintlockd (code=exited, status=0/SUCCESS)
    Main PID: 16141 (flintlockd)

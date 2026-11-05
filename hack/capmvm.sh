@@ -11,7 +11,7 @@ cleanup() {
 crd_url() {
 	local object="$1"
 
-	echo "https://raw.githubusercontent.com/weaveworks-liquidmetal/cluster-api-provider-microvm/main/config/crd/bases/infrastructure.cluster.x-k8s.io_$object.yaml"
+	echo "https://raw.githubusercontent.com/liquidmetal-dev/cluster-api-provider-microvm/main/config/crd/bases/infrastructure.cluster.x-k8s.io_$object.yaml"
 }
 
 download_cty() {
