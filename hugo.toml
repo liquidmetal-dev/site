@@ -1,6 +1,7 @@
 baseURL = "https://liquidmetal.dev/"
 title = "Liquid Metal"
 enableRobotsTXT = true
+enableEmoji = true
 enableGitInfo = true
 refLinksErrorLevel = "ERROR"
 
@@ -17,9 +18,12 @@ refLinksErrorLevel = "ERROR"
 [markup.highlight]
   noClasses = false
 
+[taxonomies]
+  tag = "tags"
+
 [permalinks]
   [permalinks.taxonomy]
-    tags = "/blog/tags/:slug/"
+    tags = "/blog/tags/"
   [permalinks.term]
     tags = "/blog/tags/:slug/"
 
