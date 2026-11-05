@@ -62,5 +62,5 @@ This tutorial is brand new. If you experience any issues or difficulties, please
 come to the [Slack channel][slack] or open an issue in [Github][gh].
 :::
 
-[slack]: https://weave-community.slack.com/archives/C02KARWGR7S
+[slack]: https://cloud-native.slack.com/archives/C07B5R5BLBZ
 [gh]: https://github.com/liquidmetal-dev/site

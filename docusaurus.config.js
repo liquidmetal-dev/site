@@ -103,7 +103,7 @@ const config = {
             items: [
               {
                 label: 'Slack',
-                href: 'https://weave-community.slack.com/archives/C02KARWGR7S',
+                href: 'https://cloud-native.slack.com/archives/C07B5R5BLBZ',
               },
               {
                 label: 'Contributing',

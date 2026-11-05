@@ -30,7 +30,7 @@ feel free to add your name and any items to discuss!
 To join discussions, comment on issues, or ask for help, please go to the relevant
 repo in our [github org][gh].
 
-[slack]: https://weave-community.slack.com/archives/C02KARWGR7S
+[slack]: https://cloud-native.slack.com/archives/C07B5R5BLBZ
 [gh]: https://github.com/liquidmetal-dev
 [group]: https://groups.google.com/g/liquid-metal-contributors
 [event]: https://calendar.google.com/calendar/u/0?cid=ZGZhMjVkNzBlZGUwZWQ3OWY1ODNiZTNiMjhlZGNkNGY4YThkNDk0MWU0YWEzNWZhNmJlNGU1MjNlOWU4MGZlYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t

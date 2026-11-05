@@ -33,7 +33,7 @@ part of Liquid Metal:
 everyone to dig in and find something, big or small, which interests them.
 We are also keen to elevate regular and trusted contributors to maintainers.
 
-[slack]: https://weave-community.slack.com/archives/C02KARWGR7S
+[slack]: https://cloud-native.slack.com/archives/C07B5R5BLBZ
 [site-gh]: https://github.com/liquidmetal-dev/site/issues
 [meeting]: /docs/community/contact/#community-meetings
 [cb]: https://github.com/Callisto13

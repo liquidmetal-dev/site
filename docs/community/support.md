@@ -89,7 +89,7 @@ and the rest of the investigation will be tracked there.
 
 [coc]: /docs/community/coc
 [contrib]: /docs/community/contributing
-[slack]: https://weave-community.slack.com/archives/C02KARWGR7S
+[slack]: https://cloud-native.slack.com/archives/C07B5R5BLBZ
 [capmvm]: https://github.com/liquidmetal-dev/cluster-api-provider-microvm
 [flintlock]: https://github.com/liquidmetal-dev/flintlock
 [site]: https://github.com/liquidmetal-dev/site

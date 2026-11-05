@@ -49,7 +49,7 @@ the Code of Conduct may be permanently removed from the project team.
 ## Reporting
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting a LM [team member][team], or Alexis Richardson (alexis@weave.works).
+reported by contacting a LM [team member][team].
 
 ## Enforcement
 
