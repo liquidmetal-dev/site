@@ -1,11 +1,10 @@
 .PHONY: build
 build:
-	npm ci
-	npm run build
+	hugo --gc --minify --panicOnWarning
 
-.PHONY: deploy
-deploy: generate build
-	npm run deploy
+.PHONY: serve
+serve:
+	hugo server --bind 0.0.0.0
 
 .PHONY: generate
 generate:
