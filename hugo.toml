@@ -1,0 +1,99 @@
+baseURL = "https://liquidmetal.dev/"
+title = "Liquid Metal"
+enableRobotsTXT = true
+enableGitInfo = true
+refLinksErrorLevel = "ERROR"
+
+[module]
+  [module.hugoVersion]
+    min = "0.146.0"
+  [[module.imports]]
+    path = "github.com/imfing/hextra"
+
+[markup.goldmark.renderer]
+  # The docs use raw <details> blocks for command output.
+  unsafe = true
+
+[markup.highlight]
+  noClasses = false
+
+[permalinks]
+  [permalinks.taxonomy]
+    tags = "/blog/tags/:slug/"
+  [permalinks.term]
+    tags = "/blog/tags/:slug/"
+
+[[menu.main]]
+  name = "Docs"
+  pageRef = "/docs"
+  weight = 1
+[[menu.main]]
+  name = "Blog"
+  pageRef = "/blog"
+  weight = 2
+[[menu.main]]
+  name = "Community"
+  pageRef = "/docs/community"
+  weight = 3
+[[menu.main]]
+  name = "Search"
+  weight = 4
+  [menu.main.params]
+    type = "search"
+[[menu.main]]
+  name = "Slack"
+  url = "https://cloud-native.slack.com/archives/C07B5R5BLBZ"
+  weight = 5
+  [menu.main.params]
+    icon = "slack"
+[[menu.main]]
+  name = "GitHub"
+  url = "https://github.com/liquidmetal-dev"
+  weight = 6
+  [menu.main.params]
+    icon = "github"
+
+[[menu.sidebar]]
+  identifier = "more"
+  name = "More"
+  weight = 1
+  [menu.sidebar.params]
+    type = "separator"
+[[menu.sidebar]]
+  name = "Flintlock ↗"
+  url = "https://flintlock.liquidmetal.dev"
+  weight = 2
+
+[params]
+  description = "Declarative, lightweight, and fast Kubernetes clusters."
+  externalLinkDecoration = true
+
+  [params.navbar]
+    displayTitle = true
+    displayLogo = true
+    [params.navbar.logo]
+      path = "img/DROPLET.svg"
+
+  [params.theme]
+    default = "system"
+    displayToggle = true
+
+  [params.footer]
+    enable = true
+    displayCopyright = true
+    displayPoweredBy = true
+
+  [params.search]
+    enable = true
+    type = "flexsearch"
+
+  [params.editURL]
+    enable = true
+    base = "https://github.com/liquidmetal-dev/site/edit/main/content"
+
+  [params.highlight.copy]
+    enable = true
+    display = "hover"
+
+  [params.page]
+    width = "normal"

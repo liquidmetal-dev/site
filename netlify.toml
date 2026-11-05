@@ -1,0 +1,53 @@
+[build]
+  publish = "public"
+  command = "hugo --gc --minify --panicOnWarning"
+
+[build.environment]
+  HUGO_VERSION = "0.169.0"
+  GO_VERSION = "1.26.2"
+
+[[redirects]]
+  from = "/flintlock-api"
+  to = "https://github.com/liquidmetal-dev/flintlock/blob/main/api/services/microvm/v1alpha1/microvms.swagger.json"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/docs/category/basics-do-try-this-at-home"
+  to = "/docs/tutorial-basics/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/category/advanced-equinix-platform"
+  to = "/docs/tutorial-equinix/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/category/fun-raspberry-pi-homelab"
+  to = "/docs/tutorial-rpi/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/category/architecture"
+  to = "/docs/architecture/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/category/troubleshooting"
+  to = "/docs/troubleshooting/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/category/guide-for-contributors"
+  to = "/docs/community/contributing/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/archive"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/community"
+  to = "/docs/community/"
+  status = 301
