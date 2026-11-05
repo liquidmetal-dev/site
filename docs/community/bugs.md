@@ -85,7 +85,7 @@ awesome! Let us know on the issue and it will be assigned to you. Head over to t
 [contribution guide][contrib] for next steps.
 
 [coc]: /docs/community/coc
-[slack]: https://weave-community.slack.com/archives/C02KARWGR7S
+[slack]: https://cloud-native.slack.com/archives/C07B5R5BLBZ
 [board]: https://github.com/orgs/weaveworks-liquidmetal/projects/1/views/2
 [capmvm]: https://github.com/liquidmetal-dev/cluster-api-provider-microvm
 [discussion]: https://github.com/liquidmetal-dev/cluster-api-provider-microvm/discussions/categories/ideas

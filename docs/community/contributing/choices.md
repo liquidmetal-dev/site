@@ -119,7 +119,7 @@ are going. This is not to put pressure on you to "work faster" (please work at y
 but so that we can check that you are still on the case and whether you need any help.
 If you no longer have time for the issue, we can have it reassigned.
 
-[slack]: https://weave-community.slack.com/archives/C02KARWGR7S
+[slack]: https://cloud-native.slack.com/archives/C07B5R5BLBZ
 [team]: /docs/community/team
 [board]: https://github.com/orgs/weaveworks-liquidmetal/projects/1/views/2
 [flint]: https://github.com/liquidmetal-dev/flintlock

@@ -59,7 +59,7 @@ feel free to add your name and any items to discuss!
 [gh-sign]: http://github.com/signup
 [coc]: /docs/community/coc
 [gpg]: https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification
-[slack]: https://weave-community.slack.com/archives/C02KARWGR7S
+[slack]: https://cloud-native.slack.com/archives/C07B5R5BLBZ
 [group]: https://groups.google.com/g/liquid-metal-contributors
 [event]: https://calendar.google.com/calendar/u/0?cid=ZGZhMjVkNzBlZGUwZWQ3OWY1ODNiZTNiMjhlZGNkNGY4YThkNDk0MWU0YWEzNWZhNmJlNGU1MjNlOWU4MGZlYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
 [agenda]: https://docs.google.com/document/d/16XHoWWouzLypGDJ-YQtwVzVD1zOq-SLTG8mm1bVqSA8/edit

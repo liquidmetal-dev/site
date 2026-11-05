@@ -21,5 +21,5 @@ please reach out to the team or the community.
   implementation. You can ping us directly, or head to the [slack channel][slack]
   to see if anyone in the community is up for being a buddy :pear: .
 
-[slack]: https://weave-community.slack.com/archives/C02KARWGR7S
+[slack]: https://cloud-native.slack.com/archives/C07B5R5BLBZ
 [team]: /docs/community/team
