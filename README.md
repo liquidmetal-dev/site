@@ -1,28 +1,47 @@
 # Liquid Metal Website
 
-This site is built using Docusaurus.
+This site is built using [Hugo](https://gohugo.io/) with the
+[Hextra](https://imfing.github.io/hextra/) theme, which is pulled in as a Hugo
+module (see `go.mod`). No Node.js or npm packages are needed.
 
-It is published to github-pages when there are new pushes to `main`. Do not attempt
-to publish manually.
+It is published by Netlify (see `netlify.toml`) when there are new pushes to
+`main`. Do not attempt to publish manually.
 
-Local development:
+## Local development
 
 ```bash
 git clone https://github.com/liquidmetal-dev/site
 cd site
+mise install
 ```
 
-Because I develop on multiple machines over SSH, I have configured the site to run
-from `0.0.0.0`. If you do not need this (ie the machine you are typing on is the
-same as the one on which you are looking at the UI), open `package.json` and edit
-line 7, removing the `--host 0.0.0.0`.
+`mise install` gets the pinned Hugo and Go versions from `mise.toml`. Hugo
+modules need `go` on your `PATH`.
 
 ```bash
-npm ci
-npm run start
+make serve
 ```
 
-Navigate to localhost:3000 (or `http://<device ip>:3000` if you did not change `package.json`).
+This runs `hugo server --bind 0.0.0.0`, so you can open the site from another
+machine at `http://<device ip>:1313`. Locally it is at http://localhost:1313/.
+
+To build the site into `public/`:
+
+```bash
+make build
+```
+
+Broken internal links fail the build.
+
+## Content
+
+- Docs live under `content/docs/` and blog posts under `content/blog/`. Order
+  docs with `weight` in the front matter.
+- Use GitHub-style alerts (`> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`, ...) for
+  callouts.
+- Link to other pages with relative `.md` paths or site paths such as
+  `/docs/community/contact`.
+- Redirects for old URLs are in `netlify.toml`.
 
 ## Contributing
 
@@ -34,8 +53,7 @@ So, if you find a typo, instead of opening an issue... why not submit a quick PR
 
 A good guide for the sort of content found in good docs can be found [here](https://documentation.divio.com/).
 
-I have zero experience with JS and React and... stuff, so if anyone wants to improve
-the look and functionality of the site that would be sweet.
+If anyone wants to improve the look and functionality of the site that would be sweet.
 
 Developing the site is pretty easy:
 

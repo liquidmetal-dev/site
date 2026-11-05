@@ -4,23 +4,18 @@ on:
   pull_request:
     branches:
       - main
-    # Review gh actions docs if you want to further define triggers, paths, etc
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
 jobs:
   test-deploy:
     name: Test deployment
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - uses: jdx/mise-action@c2a87611a18de5b3828c5652fe268e992400cb5c # v4.3.0
         with:
-          node-version: 18
-          cache: npm
-
-      - name: Install dependencies
-        run: npm install
+          install_args: go hugo
       - name: Test build website
-        run: npm run build
+        run: hugo --gc --minify --panicOnWarning

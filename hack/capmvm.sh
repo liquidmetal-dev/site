@@ -52,14 +52,14 @@ pushd "$TEMPDIR" || exit 1
 download_cty
 
 # add generated yamls to the site doc
-one=$(add_yaml_to_page "$(cat "$START/docs/component-info/capmvm.md")" 1 "microvmclusters")
+one=$(add_yaml_to_page "$(cat "$START/content/docs/component-info/capmvm.md")" 1 "microvmclusters")
 two=$(add_yaml_to_page "$one" 2 "microvmmachines")
 add_yaml_to_page "$two" 3 "microvmmachinetemplates" > three.yaml
-mv three.yaml "$START/docs/component-info/capmvm.md"
+mv three.yaml "$START/content/docs/component-info/capmvm.md"
 
 ## update to make map[string]string clearer
 # this is just a hacky stop-gap until the feature is better in cty
-edit_maps kernelCmdline "$START/docs/component-info/capmvm.md"
-edit_maps annotations "$START/docs/component-info/capmvm.md"
-edit_maps labels "$START/docs/component-info/capmvm.md"
-edit_maps attributes "$START/docs/component-info/capmvm.md"
+edit_maps kernelCmdline "$START/content/docs/component-info/capmvm.md"
+edit_maps annotations "$START/content/docs/component-info/capmvm.md"
+edit_maps labels "$START/content/docs/component-info/capmvm.md"
+edit_maps attributes "$START/content/docs/component-info/capmvm.md"
