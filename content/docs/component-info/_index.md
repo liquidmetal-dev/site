@@ -1,6 +1,6 @@
 ---
 title: "Components"
-weight: 5
+weight: 6
 ---
 
 {{< section-pages >}}

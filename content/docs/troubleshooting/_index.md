@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting"
-weight: 7
+weight: 8
 ---
 
 Common issues and how to solve them.

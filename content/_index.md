@@ -72,23 +72,25 @@ layout: hextra-home
     title="Kubernetes clusters"
     icon="cube"
     subtitle="Run control plane and worker nodes as microVMs with Cluster API. Put more clusters on less hardware, on-prem or at the edge."
-    link="/docs/tutorial-basics/"
+    link="/docs/use-cases/kubernetes/"
   >}}
   {{< hextra/feature-card
     title="CI runners"
     icon="terminal"
     subtitle="Give every job a clean, isolated microVM that is destroyed afterwards. No shared state, no leftover secrets."
-    link="https://github.com/liquidmetal-dev/muster"
+    link="/docs/use-cases/ci-runners/"
   >}}
   {{< hextra/feature-card
     title="Ephemeral environments"
     icon="collection"
     subtitle="Preview, test and development environments that start in seconds and leave nothing behind."
+    link="/docs/use-cases/ephemeral-environments/"
   >}}
   {{< hextra/feature-card
     title="AI agent sandboxes"
     icon="sparkles"
     subtitle="Give agents a real machine to run untrusted code in, with a hard isolation boundary and a fast reset."
+    link="/docs/use-cases/agent-sandboxes/"
   >}}
 {{< /hextra/feature-grid >}}
 

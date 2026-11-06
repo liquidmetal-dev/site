@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Equinix Platform"
-weight: 3
+weight: 4
 ---
 
 A more advanced tutorial. Create a Liquid Metal platform on Equinix Metal.
