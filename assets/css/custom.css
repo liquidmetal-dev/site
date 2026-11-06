@@ -9,3 +9,22 @@
   --primary-saturation: 100%;
   --primary-lightness: 50%;
 }
+
+.lm-section-title {
+  margin-top: 4rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.lm-section-lead {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.7;
+}
+
+.lm-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}

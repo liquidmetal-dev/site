@@ -69,7 +69,7 @@ refLinksErrorLevel = "ERROR"
   weight = 2
 
 [params]
-  description = "Declarative, lightweight, and fast Kubernetes clusters."
+  description = "Fast, isolated microVMs on your own metal: for Kubernetes, CI runners, ephemeral environments and agent sandboxes."
   externalLinkDecoration = true
 
   [params.navbar]
