@@ -6,35 +6,49 @@ weight: 1
 <img class="hx:dark:hidden" src="/img/LM-LOGO-HORIZONTAL-LIGHTBACK.svg" alt="Liquid Metal Logo" />
 <img class="hx:hidden hx:dark:block" src="/img/LM-LOGO-HORIZONTAL-DARKBACK.svg" alt="Liquid Metal Logo" />
 
-Liquid Metal is a set of solutions to:
+Liquid Metal is a set of open source projects for running lightweight virtual machines
+(microVMs) on your own hardware and managing them declaratively. It lets you:
 
-- Declaratively provision Kubernetes clusters dynamically on lightweight virtual machines (i.e. microVMs) and bare-metal
-- Create lightweight clusters to maximize the available [edge] compute
-  - microVMs are our friend
-  - More clusters/nodes on the available bare-metal hosts
-  - Minimizing resource footprint without sacrificing hard isolation
-- Support clusters where direct access to hardware acceleration is needed (i.e. 5G networks)
-- Using standard kubernetes and linux kernel and operating system capabilities
+- Run fast, isolated, disposable microVMs on bare metal, from datacenter servers to the edge
+- Get the hard isolation of a virtual machine with a start time close to that of a container
+- Pack more workloads onto the hardware you already have
+- Manage microVMs through an API, a CLI or Kubernetes resources
+- Build on standard components: Firecracker, Cloud Hypervisor, containerd, KVM and Kubernetes
 
-Liquid Metal may be right for you if:
-- You want to run applications on edge hardware, without caring about the software
-infrastructure (cattle not pets).
-- You want to reduce your carbon emissions by using less hardware more efficiently.
-- You want an inexpensive, easy to operate on-prem solution.
-- You want a resource-light self-hosted CI runner solution.
-- You want to pack more nodes into your sweet Rasperry Pi homelab rig :sunglasses:.
+Liquid Metal may be right for you if you want to:
 
-The Liquid Metal project is comprised of various components which work together.
-These are:
-- Flintlock/Cloud Hypervisor
-- CAPMVM
-- Firecracker
+- Run [Kubernetes clusters](/docs/use-cases/kubernetes/) on microVMs, with more clusters
+  and nodes on each bare-metal host.
+- Run [CI jobs](/docs/use-cases/ci-runners/) in a fresh, isolated microVM per job.
+- Create [ephemeral environments](/docs/use-cases/ephemeral-environments/) for previews,
+  tests and development that leave nothing behind.
+- Give [AI agents a sandbox](/docs/use-cases/agent-sandboxes/) to run untrusted code in.
+- Use less hardware more efficiently and reduce your carbon emissions.
+- Pack more workloads into your sweet Raspberry Pi homelab rig :sunglasses:.
+
+## Projects
+
+The Liquid Metal projects work together, but you can use them on their own too.
+
+| Project | What it does |
+|---|---|
+| [Flintlock][flintlock-repo] | Creates and manages microVMs on a host. The base of everything else. |
+| [Cluster API Provider MicroVM][capmvm-repo] | Creates Kubernetes clusters with microVMs as nodes. |
+| [microvm-operator][operator-repo] | Manages microVMs as Kubernetes resources. _Experimental._ |
+| [Brigade][brigade-repo] | Schedules microVMs across many Flintlock hosts. _Experimental._ |
+| [Battery][battery-repo] | Keeps a warm pool of pre-booted microVMs ready to claim. _Experimental._ |
+| [guest-agent][guest-agent-repo] | Lets the host run commands and copy files in a microVM over vsock. _Experimental._ |
+| [muster][muster-repo] | Runs GitHub Actions jobs in microVMs. _Experimental._ |
+
+Under the hood, Liquid Metal uses these components:
+
+- Firecracker and Cloud Hypervisor
 - Containerd
 
 > [!TIP]
-> A Liquid Metal _system/platform_ refers to the combination of a CAPI management cluster
-> running CAPMVM, and a number of bare metal devices running Flintlock which are able
-> to host MicroVMs.
+> In the Kubernetes use case, a Liquid Metal _system/platform_ refers to the combination
+> of a CAPI management cluster running CAPMVM, and a number of bare metal devices running
+> Flintlock which are able to host MicroVMs.
 >
 > A Liquid Metal _cluster_ refers to a workload cluster created by CAPMVM with nodes
 > running in MicroVMs created by `flintlockd` on the bare metal host.
@@ -44,9 +58,9 @@ These are:
 Flintlock is a gRPC service written in Go which manages the lifecycle of lightweight
 virtual machines (called MicroVMs) on physical and virtual hosts.
 
-The component can be used independently of Liquid Metal if desired, but its primary
-usecase is to create microVMs on a bare-metal host where the MicroVMs will be used
-as nodes in a virtualized Liquid Metal Kubernetes cluster.
+Flintlock does not know about Kubernetes. Any of the other projects, or your own tools,
+can use its API to create microVMs for any task: Kubernetes nodes, CI runners,
+ephemeral environments or sandboxes.
 
 Flintlock supports [Firecracker][firecracker] and experimentally [Cloud Hypervisor][cloud-h].
 
@@ -108,3 +122,10 @@ For more diagrams, see [Architecture](/docs/architecture/).
 [cloud-h]: https://www.cloudhypervisor.org/
 [containerd]: https://containerd.io/
 [capi]: https://cluster-api.sigs.k8s.io/
+[flintlock-repo]: https://github.com/liquidmetal-dev/flintlock
+[capmvm-repo]: https://github.com/liquidmetal-dev/cluster-api-provider-microvm
+[operator-repo]: https://github.com/liquidmetal-dev/microvm-operator
+[brigade-repo]: https://github.com/liquidmetal-dev/brigade
+[battery-repo]: https://github.com/liquidmetal-dev/battery
+[guest-agent-repo]: https://github.com/liquidmetal-dev/guest-agent
+[muster-repo]: https://github.com/liquidmetal-dev/muster
