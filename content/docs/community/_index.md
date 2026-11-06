@@ -1,6 +1,6 @@
 ---
 title: Community
-weight: 8
+weight: 9
 ---
 
 Hello, hello, hello :sparkles:
